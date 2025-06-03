@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <span id="hello" onclick="click()">Hello world</span>
+    il nest pas dans span
+    <script>
+        const hello = document.querySelectorAll('.hello');
+        
+        function updateCarousel() {
+            images.forEach((img, index) => {
+                img.classList.remove('active');
+                if (index === currentIndex) {
+                    img.classList.add('active');
+                }
+            });
+        }
+        function click(){
+            document.getElementById("hello").innerText = "Tu as cliquer";
+        }
+
+        hello.addEventListener('click', () => {
+            hello.innerHtml = 'Tu as clique'
+        });
+
+        
+    </script>
+</body>
+</html>

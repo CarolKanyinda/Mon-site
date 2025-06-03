@@ -1,0 +1,81 @@
+
+        .index-body {
+            background-color: #8d4646f1;
+            
+            
+        }  /*corp de l'index*/
+       
+        
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff8f8;
+            font-weight: bold;
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #000000f1;
+            color: #fff;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        section {
+            background-color: rgba(236, 225, 225, 0.11);
+            margin: 20px;
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .title-h1 {
+            color: #000000;
+            font-size: 45px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        h4 { /*h4 de l'index*/
+            color: #f0eee2;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #e6d6d6;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            color: #777;
+        }
+ 
+ p {
+    color: beige;
+ }
