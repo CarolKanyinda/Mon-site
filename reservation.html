@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Immobilière</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="index-body">
+    <header>
+        <nav>
+     <!-- Conteneur pour le logo et le menu -->
+  <div class="header-container">
+    <!-- Logo du site placé à gauche -->
+    <img src="logo.jpg.png" alt="Logo" class="logo">
+            <ul class="menu">
+                <li><a href="index.html">Accueil |</a></li>
+                <li><a href="nos salles.html">Nos salles |</a></li>
+                <li><a href="tarifs.html">Tarifs |</a></li>
+                <li><a href="reservation.html">Reservation |</a></li>
+                <li><a href="contact.html">Contact |</a></li>
+
+            </ul>
+        </nav>
+     </header>
+<main> <!-- Contenu principal -->
+    <section class="reservation-section"> <!-- Section pour la réservation -->
+      <h2 class="titre-reservation">Réservez votre événement 🎉</h2> <!-- Titre de la section -->
+
+      <form class="reservation-form"> <!-- Début du formulaire -->
+        <label for="nom">Nom complet :</label> <!-- Étiquette pour le nom -->
+        <input type="text" id="nom" name="nom" required> <!-- Champ texte nom -->
+
+        <label for="email">Adresse e-mail :</label> <!-- Étiquette pour l'email -->
+        <input type="email" id="email" name="email" required> <!-- Champ email -->
+
+        <label for="telephone">Téléphone :</label> <!-- Étiquette téléphone -->
+        <input type="tel" id="telephone" name="telephone" required> <!-- Champ téléphone -->
+
+        <label for="evenement">Type d'événement :</label> <!-- Étiquette événement -->
+        <select id="evenement" name="evenement" required> <!-- Menu déroulant -->
+          <option value="">--Sélectionnez--</option> <!-- Option vide -->
+          <option value="mariage">Mariage</option> <!-- Option mariage -->
+          <option value="anniversaire">Anniversaire</option> <!-- Option anniversaire -->
+          <option value="conference">Conférence</option> <!-- Option conférence -->
+          <option value="reunion">Réunion</option> <!-- Option réunion -->
+        </select>
+
+        <label for="date">Date de l'événement :</label> <!-- Étiquette date -->
+        <input type="date" id="date" name="date" required> <!-- Champ date -->
+
+        <label for="message">Message supplémentaire :</label> <!-- Étiquette message -->
+        <textarea id="message" name="message" rows="4"></textarea> <!-- Zone de texte -->
+
+        <button type="submit">Envoyer la réservation</button> <!-- Bouton envoyer -->
+      </form> <!-- Fin du formulaire -->
+
+    </section> <!-- Fin section réservation -->
+  </main> <!-- Fin du contenu principal -->
+
+</body> <!-- Fin du body -->
+</html> <!-- Fin du document HTML -->
+   

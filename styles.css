@@ -1,36 +1,62 @@
 
         .index-body {
-            background-color: #8d4646f1;
+            background-color: #130303f1;
             
             
         }  /*corp de l'index*/
-       
-        
+/* Conteneur de l'en-tête qui contient le logo et le menu */
+.header-container {
+  display: flex; /* Place les éléments en ligne (horizontalement) */
+  justify-content: space-between; /* Espace entre le logo (gauche) et le menu (droite) */
+  align-items: center; /* Centre verticalement le logo et le menu */
+  padding: 10px 20px; /* Espace intérieur (haut/bas et gauche/droite) */
+  background-color: #694949;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin: 10px 0;
-        }
-        nav ul li {
-            margin: 0 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #fff8f8;
-            font-weight: bold;
-            font-size: 35px;
-            font-family: 'Times New Roman', Times, serif;
-            padding: 8px 12px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        nav ul li a:hover {
-            background-color: #000000f1;
-            color: #fff;
-        }
+/* Style du logo à gauche */
+.logo{
+  margin-left: 0;
+  width: 60px; /* Largeur du logo (tu peux modifier) */
+  height: auto; /* Garde les proportions de l'image */
+  border-radius: 300px;
+  display: block;
+}
+
+       
+/* On applique les mêmes styles à .menu, .menu li et .menu li a */
+.menu, .menu li, .menu li a {
+  background-color: #694949;
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les espacements internes par défaut */
+  list-style: none; /* Supprime les puces des listes */
+  font-family: 'Times New Roman', Times, serif; /* Police d’écriture */
+  font-weight: bold; /* Met le texte en gras */
+  font-size: 20px; /* Taille du texte */
+  color: #fff8f8; /* Couleur du texte (blanc cassé) */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s, color 0.3s; /* Animation douce quand on survole */
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+/* Style pour la liste entière */
+.menu {
+  display: flex; /* Met les éléments en ligne */
+  justify-content: flex-end; /* Aligne les éléments à droite */
+  margin: 10px 0; /* Marge en haut et en bas */
+}
+
+/* Style pour chaque élément de la liste */
+.menu li {
+  margin: 0 20px; /* Espace entre chaque menu */
+  padding: 8px 12px; /* Espace intérieur */
+}
+
+/* Effet au survol des liens */
+.menu li a:hover {
+  background-color: #01010a; /* Fond bleu au survol */
+  color: #fff; /* Texte devient blanc au survol */
+}
+
         main {
             flex: 1;
             display: flex;
@@ -46,36 +72,162 @@
             max-width: 800px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
-        .title-h1 {
-            color: #000000;
-            font-size: 45px;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-        }
-        h2 {
-            color: #ffffff;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
-        h4 { /*h4 de l'index*/
-            color: #f0eee2;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background-color: #e6d6d6;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        footer p {
-            margin: 0;
-            color: #777;
-        }
- 
- p {
-    color: beige;
- }
+ .carol{
+  color: #a07b7b;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+ }       
+        
+.presentation {
+  display: flex;
+  align-items: center; /* aligne verticalement */
+  justify-content: space-between; /* espace entre les deux */
+  gap: 20px;
+}
+
+.texte-presentation {
+  width: 50%; /* moitié pour le texte */
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.image-presentation {
+  width: 55%; /* moitié pour l’image */
+  height: 300px; /* ajuste à ta convenance */
+  background-color: #694949;
+}
+
+.image-presentation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* l’image remplit bien sans être déformée */
+  border-radius: 10px;
+}
+/* Section entière des tarifs */
+.tarifs-section {
+  text-align: center; /* Centrer le texte */
+  padding: 40px 20px; /* Espace autour */
+  background-color: rgba(236, 225, 225, 0.11); /* Fond sombre */
+  color: #fdf5e6; /* Couleur du texte claire */
+}
+
+/* Titre "Tarifs" */
+.titre-tarif {
+  font-size: 40px;
+  margin-bottom: 30px; /* Espace en bas du titre */
+}
+/* Conteneur général pour tout centrer */
+.tarifs-wrapper {
+  display: flex;          /* active le mode flex */
+  flex-direction: column; /* empile en colonne (titre + boîtes) */
+  align-items: center;    /* centre le contenu au milieu */
+  justify-content: center; /*centre verticalement si besoin*/
+  min-height: 100vh; /*occuper toute la hauteur de la page*/
+}
+
+/* Conteneur des boîtes de tarifs */
+
+/* Conteneur des 3 boîtes */
+.tarifs-container {
+  display: grid;              /* Utiliser une grille */
+  justify-content: center; /* Centrer horizontalement */
+  flex-wrap: wrap; /* Permet de passer à la ligne si petit écran */
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+  gap: 20px;                  /* Espace entre les boîtes */
+  max-width: 800px;           /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  text-align: center;
+
+}
+
+/* Style de chaque boîte */
+.tarif-box {
+  background-color: #6d4848; /* Couleur bordeaux foncé */
+  padding: 100px 80px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+/* Prix en grand et gras */
+.prix {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+/*FIN DE TARIFS*/
+
+/*DEBUT DE RESERVATION*/
+
+/* Style général du corps */
+body.index-body {
+  font-family: Arial, sans-serif; /* Police du texte */
+  margin: 0; /* Enlève les marges par défaut */
+  padding: 0; /* Enlève les espacements internes */
+}
+
+
+
+/* Section de réservation */
+.reservation-section {
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 40px auto; /* Centrage vertical et horizontal */
+  padding: 20px;
+  background-color: rgba(236, 225, 225, 0.11); /* Fond blanc */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombre douce */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+/* Titre de la section */
+.titre-reservation {
+  text-align: center; /* Centrage du texte */
+  margin-bottom: 20px;
+  color: #fff5f5; /* Couleur foncée */
+}
+
+/* Formulaire */
+.reservation-form {
+  display: flex;
+  flex-direction: column; /* Organisation en colonne */
+  gap: 15px; /* Espacement entre les champs */
+}
+
+/* Champs texte et zone de saisie */
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  padding: 10px; /* Espacement intérieur */
+  border-radius: 5px; /* Coins arrondis */
+  border: none; /* Bordure grise */
+  font-size: 16px;
+  background-color: #694949;
+}
+.reservation-form label {
+  color: #fdf5e6; /*couleur du text sur le formulaire*/
+} 
+
+
+/* Bouton envoyer */
+.reservation-form button {
+  padding: 12px;
+  background-color: #694949; /* Couleur jaune */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer; /* Curseur en forme de main */
+}
+
+/* Effet au survol du bouton */
+.reservation-form button:hover {
+  background-color: #694949; /* Jaune foncé */
+}
+
+
+/*FIN DE RESERVATION*/
+
+/*DEBUT NOS SALLES*/
+
+
+
