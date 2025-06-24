@@ -235,13 +235,6 @@ body.index-body {
 }
 
 /*DEBUT CONTACT*/
-/* Cible tout le corps de la page */
-body {
-  font-family: Arial, sans-serif; /* Définit la police d’écriture */
-  background-color: #f5e3cd;      /* Couleur de fond beige clair */
-  margin: 0;                      /* Enlève les marges par défaut */
-  padding: 0;                     /* Enlève les espacements internes */
-}
 
 /* Conteneur principal */
 .container {
