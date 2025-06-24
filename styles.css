@@ -234,4 +234,51 @@ body.index-body {
 
 }
 
+/*DEBUT CONTACT*/
+/* Cible tout le corps de la page */
+body {
+  font-family: Arial, sans-serif; /* Définit la police d’écriture */
+  background-color: #f5e3cd;      /* Couleur de fond beige clair */
+  margin: 0;                      /* Enlève les marges par défaut */
+  padding: 0;                     /* Enlève les espacements internes */
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 500px;              /* Largeur maximale du bloc */
+  margin: 50px auto;             /* Centrage horizontal + espace en haut */
+  padding: 20px;                 /* Espacement interne */
+  background-color: #fff4e6;     /* Couleur de fond du bloc (beige plus clair) */
+  border-radius: 15px;           /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  text-align: center;           /* Centre le texte à l’intérieur */
+}
+
+/* Style pour le titre principal */
+h1 {
+  color: #4a2c1f;               /* Couleur du texte (marron foncé) */
+  margin-bottom: 20px;         /* Espace sous le titre */
+}
+
+/* Boîte qui contient les infos de contact */
+.info-box {
+  font-size: 18px;              /* Taille du texte */
+  color: #333;                  /* Couleur du texte gris foncé */
+  line-height: 1.6;             /* Hauteur de ligne pour meilleure lisibilité */
+}
+
+/* Style pour les icônes (emojis) */
+.icon {
+  margin-right: 10px;           /* Espace entre l’icône et le texte */
+}
+
+/* Texte en bas de la carte */
+.footer-text {
+  margin-top: 25px;            /* Espace au-dessus du texte */
+  font-style: italic;          /* Texte en italique */
+  color: #6e4d3a;              /* Couleur douce marron clair */
+}
+
+
+
 
