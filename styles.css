@@ -231,7 +231,9 @@ body.index-body {
 .kam {
   background-color: #fff;
   border-radius: 14px;
-  width: ;
+  width: 270px;
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  text-align: center;
   
 
 }
