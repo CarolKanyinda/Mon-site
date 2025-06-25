@@ -241,7 +241,7 @@ body.index-body {
   max-width: 500px;              /* Largeur maximale du bloc */
   margin: 50px auto;             /* Centrage horizontal + espace en haut */
   padding: 20px;                 /* Espacement interne */
-  background-color: rgba(0,0,0,0.1);     /* Couleur de fond du bloc (trasparent) */
+  background-color: rgba(236, 225, 225, 0.11); /* Fond blanc */
   border-radius: 15px;           /* Coins arrondis */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
   text-align: center;           /* Centre le texte à l’intérieur */
