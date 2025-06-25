@@ -228,6 +228,10 @@ body.index-body {
 /*FIN DE RESERVATION*/
 
 /*DEBUT NOS SALLES*/
+.car {
+  display: flex;
+  flex-wrap: wrap;
+}
 .kam {
   background-color: #fff;
   border-radius: 14px;
