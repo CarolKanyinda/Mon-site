@@ -230,6 +230,8 @@ body.index-body {
 /*DEBUT NOS SALLES*/
 .kam {
   background-color: #fff;
+  border-radius: 14px;
+  width: ;
   
 
 }
@@ -249,7 +251,7 @@ body.index-body {
 
 /* Style pour le titre principal */
 h1 {
-  color: #694949;               /* Couleur du texte (marron foncé) */
+  color: #d49393;               /* Couleur du texte (marron foncé) */
   margin-bottom: 20px;         /* Espace sous le titre */
 }
 
@@ -269,9 +271,16 @@ h1 {
 .footer-text {
   margin-top: 25px;            /* Espace au-dessus du texte */
   font-style: italic;          /* Texte en italique */
-  color: #694949;              /* Couleur douce marron clair */
+  color: #d49393;              /* Couleur douce marron clair */
 }
-
+/*DEBUT FOOTER*/
+.paragraphe-2 { /*deco du bas home*/
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid #ca8f8f;
+    background-color: #ca8f8fb2;
+}
 
 
 
