@@ -241,7 +241,7 @@ body.index-body {
   max-width: 500px;              /* Largeur maximale du bloc */
   margin: 50px auto;             /* Centrage horizontal + espace en haut */
   padding: 20px;                 /* Espacement interne */
-  background-color: rgba(0, 0, 0, 0.1);     /* Couleur de fond du bloc (trasparent) */
+  background-color: rgba(0,0,0,0.1);     /* Couleur de fond du bloc (trasparent) */
   border-radius: 15px;           /* Coins arrondis */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
   text-align: center;           /* Centre le texte à l’intérieur */
@@ -249,7 +249,7 @@ body.index-body {
 
 /* Style pour le titre principal */
 h1 {
-  color: #4a2c1f;               /* Couleur du texte (marron foncé) */
+  color: #694949;               /* Couleur du texte (marron foncé) */
   margin-bottom: 20px;         /* Espace sous le titre */
 }
 
@@ -269,7 +269,7 @@ h1 {
 .footer-text {
   margin-top: 25px;            /* Espace au-dessus du texte */
   font-style: italic;          /* Texte en italique */
-  color: #6e4d3a;              /* Couleur douce marron clair */
+  color: #694949;              /* Couleur douce marron clair */
 }
 
 
