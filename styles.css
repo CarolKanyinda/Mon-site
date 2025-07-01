@@ -1,9 +1,9 @@
-
-        .index-body {
+.index-body {
             background-color: #130303f1;
             
             
-        }  /*corp de l'index*/
+        } 
+         /*corp de l'index*/
 /* Conteneur de l'en-tête qui contient le logo et le menu */
 .header-container {
   display: flex; /* Place les éléments en ligne (horizontalement) */
@@ -231,19 +231,36 @@ body.index-body {
 .car {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;    /* centre le contenu au milieu */
   gap: 10px;
 }
 .kam {
-  background-color: #fff;
+  background-color: rgba(236, 225, 225, 0.11);
   border-radius: 10px;
   width: 500px;
   text-align: center;
   display: inline-block;
+  margin-top: 20px;
 }
 .kan {
   height: 200px;
   object-fit: cover;
   width: 300px;
+}
+.role {
+  color: #fff5f5;
+  text-align: center;
+}
+.ted {
+  background-color: #0e0c0c;
+  list-style: none; /* Supprime les puces des listes */
+  font-family: 'Times New Roman', Times, serif; /* Police d’écriture */
+  font-weight: bold; /* Met le texte en gras */
+  font-size: 20px; /* Taille du texte */
+  color: #fff8f8; /* Couleur du texte (blanc cassé) */
+  border-radius: 5px; /* Coins arrondis */
+  text-decoration: none; /* Supprime le soulignement des liens */
 }
 
 /*DEBUT CONTACT*/
@@ -284,13 +301,102 @@ h1 {
   color: #d49393;              /* Couleur douce marron clair */
 }
 /*DEBUT FOOTER*/
-.paragraphe-2 { /*deco du bas home*/
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 2px solid #ca8f8f;
-    background-color: #ca8f8fb2;
+.paragraphe-2 {
+  /*deco du bas home*/
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid #ca8f8f;
+  background-color: #ca8f8f;
+ }
+/*RESPONSIVE*/
+
+/* Pour tablettes et petits écrans (≤ 900px) */
+@media screen and (max-width: 900px) {
+  /* Header : garder flex row, mais réduire marges si besoin */
+  .header-container {
+    padding: 10px;
+  }
+
+  /* Présentation : passage en colonne */
+  .presentation {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .texte-presentation, .image-presentation {
+    width: 100%;
+  }
+  .image-presentation {
+    height: auto;
+  }
+
+  /* Tarifs : 1 colonne au lieu de 2 */
+  .tarifs-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .tarif-box {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  /* Réservation : réduire padding */
+  .reservation-section {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  /* Salles */
+  .kam {
+    width: 100%;
+  }
+  .kan {
+    width: 100%;
+    height: auto;
+  }
 }
 
+/* Pour smartphones (≤ 600px) */
+@media screen and (max-width: 600px) {
+  /* Header passe en colonne */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu li {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .menu li a {
+    display: block;
+    width: 100%;
+  }
 
+  /* Texte présentation : réduire taille police */
+  .texte-presentation {
+    font-size: 18px;
+  }
 
+  /* Réservation : encore moins de padding */
+  .reservation-section {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  /* Contact */
+  .container {
+    max-width: 95%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  /* Footer */
+  .paragraphe-2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
