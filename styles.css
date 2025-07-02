@@ -334,7 +334,7 @@ h1 {
 
   /* Tarifs : 1 colonne au lieu de 2 */
   .tarifs-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     gap: 15px;
   }
   .tarif-box {
@@ -367,7 +367,8 @@ h1 {
     align-items: flex-start;
   }
   .menu {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
   }
   .menu li {
