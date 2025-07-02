@@ -309,100 +309,7 @@ h1 {
   border: 2px solid #ca8f8f;
   background-color: #ca8f8f;
  }
-/*RESPONSIVE*/
 
-/* Pour tablettes et petits écrans (≤ 900px) */
-@media screen and (max-width: 900px) {
-  /* Header : garder flex row, mais réduire marges si besoin */
-  .header-container {
-    padding: 10px;
-  }
-
-  /* Présentation : passage en colonne */
-  .presentation {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .texte-presentation, .image-presentation {
-    width: 100%;
-  }
-  .image-presentation {
-    height: auto;
-    max-width: 100%;
-    display: block;
-  }
-
-  /* Tarifs : 1 colonne au lieu de 2 */
-  .tarifs-container {
-    grid-template-columns: 2fr;
-    gap: 15px;
-  }
-  .tarif-box {
-    width: 100%;
-    padding: 40px 20px;
-  
-  }
-
-  /* Réservation : réduire padding */
-  .reservation-section {
-    max-width: 90%;
-    padding: 15px;
-  }
-
-  /* Salles */
-  .kam {
-    width: 100%;
-  }
-  .kan {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Pour smartphones (≤ 600px) */
-@media screen and (max-width: 600px) {
-  /* Header passe en colonne */
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .menu li {
-    margin: 10px 0;
-    width: 100%;
-    flex-direction: row;
-  }
-  .menu li a {
-    display: block;
-    width: 100%;
-  }
-  .tarifs-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  /* Texte présentation : réduire taille police */
-  .texte-presentation {
-    font-size: 16px;
-  }
-
-  /* Réservation : encore moins de padding */
-  .reservation-section {
-    max-width: 95%;
-    padding: 10px;
-  }
-
-  /* Contact */
-  .container {
-    max-width: 95%;
-    margin: 30px auto;
-    padding: 15px;
-  }
 
   /* Footer */
   .paragraphe-2 {
@@ -413,4 +320,115 @@ h1 {
     max-width: 100%;
     height: auto;
   }
+/* 👉 Ajustement sur tablette et téléphone sans changer la structure */
+@media (max-width: 1024px) {
+
+    /* Réduction des textes */
+    .carol, .titre-tarif {
+        font-size: 30px;
+    }
+
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .prix {
+        font-size: 24px;
+    }
+
+    .texte-presentation {
+        font-size: 16px;
+    }
+
+    /* Réduction des images et des sections */
+    .image-presentation {
+        height: 200px;
+    }
+
+    .kam {
+        width: 90%;
+    }
+
+    .kan {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Tarifs : conserver les 2 colonnes mais réduire la taille */
+    .tarif-box {
+        padding: 60px 40px;
+        width: 120px;
+    }
+
+    /* Réduction formulaire réservation */
+    .reservation-section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Réduction section contact */
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .paragraphe-2 {
+        font-size: 18px;
+    }
 }
+
+/* 👉 Ajustement spécial pour petits téléphones */
+@media (max-width: 600px) {
+
+    /* Réduction plus forte des textes */
+    .carol, .titre-tarif {
+        font-size: 24px;
+    }
+
+    .menu li a {
+        font-size: 16px;
+    }
+
+    .prix {
+        font-size: 20px;
+    }
+
+    .texte-presentation {
+        font-size: 14px;
+    }
+
+    /* Réduction images */
+    .image-presentation {
+        height: 150px;
+    }
+
+    .kam {
+        width: 30%;
+    }
+
+    .kan {
+        width: 30%;
+        height: 20%;
+    }
+
+    /* Tarifs : conserver les 2 colonnes mais encore plus petit */
+    .tarif-box {
+        padding: 40px 20px;
+        width: 100px;
+    }
+
+    .reservation-section {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .paragraphe-2 {
+        font-size: 16px;
+    }
+}
+
