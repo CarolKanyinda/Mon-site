@@ -328,6 +328,8 @@ h1 {
   }
   .image-presentation {
     height: auto;
+    max-width: 100%;
+    display: block;
   }
 
   /* Tarifs : 1 colonne au lieu de 2 */
@@ -379,7 +381,7 @@ h1 {
 
   /* Texte présentation : réduire taille police */
   .texte-presentation {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* Réservation : encore moins de padding */
@@ -399,5 +401,9 @@ h1 {
   .paragraphe-2 {
     font-size: 20px;
     padding: 10px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
