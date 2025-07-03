@@ -14,7 +14,7 @@ Technologies utilisées
 Installation
 
 1. Clonez ce dépôt :  
-   git clone [URL_DE_TON_DEPOT]  
+   git clone [https://carolkanyinda.github.io/Mon-site/]  
 2. Ouvrez le fichier index.html dans un navigateur web.
 
 
