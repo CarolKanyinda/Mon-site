@@ -358,6 +358,7 @@ h1 {
 
     .kam {
         width: 90%;
+        justify-content: center;
     }
 
     .kan {
