@@ -328,9 +328,20 @@ h1 {
         font-size: 30px;
     }
 
-    .menu li a {
-        font-size: 18px;
+    @media (max-width: 768px) {
+    .menu {
+        justify-content: center; /* On centre le menu si tu veux */
     }
+
+    .menu li {
+        margin: 0 5px; /* On réduit l'espace entre les éléments */
+    }
+
+    .menu li a {
+        font-size: 10px; /* On réduit la taille du texte */
+        padding: 4px 5px; /* On réduit l'espace autour du texte */
+    }
+}
 
     .prix {
         font-size: 24px;
